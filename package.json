@@ -1,0 +1,14 @@
+{
+  "name": "elgon",
+  "version": "1.0.0",
+  "description": "Just another twitter bot",
+  "main": "index.js",
+  "repository": "git@github.com:musale/elgon.git",
+  "author": "Martin Musale <martinmshale@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "twitter": "^1.7.1"
+  }
+}

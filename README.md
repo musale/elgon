@@ -1,2 +1,2 @@
 # elgon
-A bot which tweets on my behalf
+Another twitter bot
