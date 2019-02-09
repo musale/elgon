@@ -16,7 +16,9 @@ const client = new Twitter({
   const fileUrl = "https://picsum.photos/1024/512/?random";
   const adviceUrl = "https://api.adviceslip.com/advice";
   const breakingBadUrl = "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
+  const ronUrl = "http://ron-swanson-quotes.herokuapp.com/v2/quotes";
 
+  // Tweet image and advice
   request(fileUrl)
     .pipe(fs.createWriteStream("image.png"))
     .on("finish", async () => {
@@ -40,12 +42,6 @@ const client = new Twitter({
               try {
                 await client.post("statuses/update", tweetParams);
                 console.log(`Tweeted out that ${advice}`);
-                request(breakingBadUrl, async function(error, res, body) {
-                  const data = JSON.parse(body);
-                  const { quote, author } = data.pop();
-                  const status = `${quote}\n— ${author}`;
-                  await client.post("statuses/update", { status });
-                });
               } catch (error) {
                 console.error(`Tweeting error: ${error.message}`);
               }
@@ -56,4 +52,18 @@ const client = new Twitter({
         console.error(`Creating media error: ${error.message}`);
       }
     });
+
+  // Tweet breaking bad
+  request(breakingBadUrl, async function(error, res, body) {
+    const data = JSON.parse(body);
+    const { quote, author } = data.pop();
+    const status = `${quote}\n— ${author}`;
+    await client.post("statuses/update", { status });
+  });
+
+  // Tweet Ron
+  request(ronUrl, async function(error, res, body) {
+    const data = JSON.parse(body).pop();
+    await client.post("statuses/update", { status: data });
+  });
 })();
