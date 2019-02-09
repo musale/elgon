@@ -58,12 +58,24 @@ const client = new Twitter({
     const data = JSON.parse(body);
     const { quote, author } = data.pop();
     const status = `${quote}\n— ${author}`;
-    await client.post("statuses/update", { status });
+    try {
+      await client.post("statuses/update", { status });
+      console.log(`Tweeted out that ${status}`);
+    } catch (error) {
+      console.log(`Error tweeting ${status}`);
+      console.error(error);
+    }
   });
 
   // Tweet Ron
   request(ronUrl, async function(error, res, body) {
     const data = JSON.parse(body).pop();
-    await client.post("statuses/update", { status: data });
+    try {
+      await client.post("statuses/update", { status: data });
+      console.log(`Tweeted out that ${data}`);
+    } catch (error) {
+      console.log(`Error tweeting ${data}`);
+      console.error(error);
+    }
   });
 })();
