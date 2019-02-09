@@ -15,6 +15,7 @@ const client = new Twitter({
 (async () => {
   const fileUrl = "https://picsum.photos/1024/512/?random";
   const adviceUrl = "https://api.adviceslip.com/advice";
+  const breakingBadUrl = "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
 
   request(fileUrl)
     .pipe(fs.createWriteStream("image.png"))
@@ -39,6 +40,12 @@ const client = new Twitter({
               try {
                 await client.post("statuses/update", tweetParams);
                 console.log(`Tweeted out that ${advice}`);
+                request(breakingBadUrl, async function(error, res, body) {
+                  const data = JSON.parse(body);
+                  const { quote, author } = data.pop();
+                  const status = `${quote}\n— ${author}`;
+                  await client.post("statuses/update", { status });
+                });
               } catch (error) {
                 console.error(`Tweeting error: ${error.message}`);
               }
