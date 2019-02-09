@@ -36,8 +36,8 @@ workflows:
   poll:
     triggers:
       - schedule:
-          # Every 20 mins
-          cron: "*/20 * * * *"
+          # Every hour
+          cron: "0 * * * *"
           filters:
             branches:
               only:
