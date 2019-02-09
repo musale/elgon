@@ -9,6 +9,7 @@
   "private": false,
   "dependencies": {
     "dotenv": "^6.2.0",
-    "twitter": "^1.7.1"
+    "request": "^2.88.0",
+    "twit": "^2.2.11"
   }
 }

@@ -1,44 +1,52 @@
-require('dotenv').config()
+const fs = require("fs");
+const request = require("request");
 
-const Twitter = require('twitter')
+require("dotenv").config();
+
+const Twitter = require("twit");
 
 const client = new Twitter({
   consumer_key: process.env.CONSUMER_KEY,
   consumer_secret: process.env.CONSUMER_SECRET,
-  access_token_key: process.env.ACCESS_TOKEN,
+  access_token: process.env.ACCESS_TOKEN,
   access_token_secret: process.env.ACCESS_TOKEN_SECRET
-})
+});
 
-const matchRegex = new RegExp(process.env.TWEET_MATCH)
+(async () => {
+  const fileUrl = "https://picsum.photos/1024/512/?random";
+  const adviceUrl = "https://api.adviceslip.com/advice";
 
-;(async () => {
-  try {
-    const latest = await client.get('/statuses/user_timeline', {
-      screen_name: process.env.TARGET_USERNAME,
-      count: parseInt(process.env.POLL_COUNT || 10, 10),
-      include_rts: false
-    })
-
-    for (const tweet of latest) {
-      if (matchRegex.test(tweet.text)) {
-        console.log('Matched tweet:')
-        console.log({
-          text: tweet.text,
-          created_at: tweet.created_at,
-          id: tweet.id_str
-        })
-        await client.post(`/statuses/retweet/${tweet.id_str}`, {})
-        break
+  request(fileUrl)
+    .pipe(fs.createWriteStream("image.png"))
+    .on("finish", async () => {
+      const pathToImage = "image.png";
+      const mediaData = fs.readFileSync(pathToImage, { encoding: "base64" });
+      try {
+        client.post(
+          "media/upload",
+          {
+            media_data: mediaData
+          },
+          async function(err, data, response) {
+            const mediaIdStr = data.media_id_string;
+            request(adviceUrl, async function(error, response, body) {
+              const slip = JSON.parse(body);
+              const advice = slip["slip"]["advice"];
+              const tweetParams = {
+                status: advice,
+                media_ids: [mediaIdStr]
+              };
+              try {
+                await client.post("statuses/update", tweetParams);
+                console.log(`Tweeted out that ${advice}`);
+              } catch (error) {
+                console.error(`Tweeting error: ${error.message}`);
+              }
+            });
+          }
+        );
+      } catch (error) {
+        console.error(`Creating media error: ${error.message}`);
       }
-    }
-  } catch (e) {
-    const { code } = e[0]
-    if (code !== 327) {
-      console.log('Error encountered!')
-      console.log(e)
-      process.exit(1)
-    } else {
-      console.log('Already retweeted.')
-    }
-  }
-})()
+    });
+})();
