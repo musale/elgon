@@ -1,10 +1,18 @@
 const fs = require("fs");
 const request = require("request");
-const lyricsBaseUrl = "https://api.lyrics.ovh/v1";
+const Twitter = require("twit");
+const db = require("./songs.json");
 
 require("dotenv").config();
-const db = require("./songs.json");
+const lyricsBaseUrl = "https://api.lyrics.ovh/v1";
 const lyricSize = 4;
+
+const client = new Twitter({
+  consumer_key: process.env.CONSUMER_KEY,
+  consumer_secret: process.env.CONSUMER_SECRET,
+  access_token: process.env.ACCESS_TOKEN,
+  access_token_secret: process.env.ACCESS_TOKEN_SECRET
+});
 
 function pickRandomProperty(obj) {
   var result;
@@ -49,7 +57,13 @@ function tweetLyrics(lyricsUrl, song, artiste, retry = 0) {
     } else {
       const splitLyrics = lyrics.split("\n").filter(n => n);
       const tweetStr = chopLyricsToTweet(splitLyrics);
-      // TODO: tweetStr
+      try {
+        await client.post("statuses/update", { status: tweetStr });
+        console.log(`Tweeted out that ${tweetStr}`);
+      } catch (error) {
+        console.log(`Error tweeting ${tweetStr}`);
+        console.error(error);
+      }
       console.log(tweetStr);
       return;
     }
