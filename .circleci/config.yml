@@ -51,4 +51,14 @@ workflows:
                 - master
     jobs:
       - tweet
+
+  sing:
+    triggers:
+      - schedule:
+        cron: "0 * * * *"
+        filters:
+          branches:
+            only:
+              - lyrics
+    jobs:
       - lyrics
