@@ -11,8 +11,8 @@ commands:
       - checkout
       - restore_cache:
           keys:
-          - dependency-cache-{{ checksum "package.json" }}
-          - dependency-cache-
+            - dependency-cache-{{ checksum "package.json" }}
+            - dependency-cache-
       - run: npm install
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
@@ -26,12 +26,19 @@ jobs:
       - install
       - run: node index.js
 
+  lyrics:
+    <<: *defaults
+    steps:
+      - install
+      - run: node lyrics.js
+
 workflows:
   version: 2
 
   test:
     jobs:
       - tweet
+      - lyrics
 
   poll:
     triggers:
@@ -44,3 +51,4 @@ workflows:
                 - master
     jobs:
       - tweet
+      - lyrics
