@@ -49,16 +49,17 @@ workflows:
             branches:
               only:
                 - master
+                - lyrics
+
     jobs:
       - tweet
+        filters:
+          branches:
+            only:
+              - master
 
-  sing:
-    triggers:
-      - schedule:
-          cron: "0 * * * *"
-          filters:
-            branches:
-              only:
-                - lyrics
-    jobs:
       - lyrics
+        filters:
+          branches:
+            only:
+              - lyrics
