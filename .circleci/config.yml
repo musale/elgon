@@ -52,14 +52,14 @@ workflows:
                 - lyrics
 
     jobs:
-      - tweet
-        filters:
-          branches:
-            only:
-              - master
+      - tweet:
+          filters:
+            branches:
+              only:
+                - master
 
-      - lyrics
-        filters:
-          branches:
-            only:
-              - lyrics
+      - lyrics:
+          filters:
+            branches:
+              only:
+                - lyrics
