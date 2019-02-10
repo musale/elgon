@@ -55,10 +55,10 @@ workflows:
   sing:
     triggers:
       - schedule:
-        cron: "0 * * * *"
-        filters:
-          branches:
-            only:
-              - lyrics
+          cron: "0 * * * *"
+          filters:
+            branches:
+              only:
+                - lyrics
     jobs:
       - lyrics
