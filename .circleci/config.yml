@@ -37,8 +37,17 @@ workflows:
 
   test:
     jobs:
-      - tweet
-      - lyrics
+      - tweet:
+          filters:
+            branches:
+              only:
+                - master
+
+      - lyrics:
+          filters:
+            branches:
+              only:
+                - lyrics
 
   poll:
     triggers:
