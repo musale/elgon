@@ -81,7 +81,7 @@ const client = new Twitter({
   });
 
   // Tweet numbers
-  request(numbersUrl, function(error, response, body) {
+  request(numbersUrl, async function(error, response, body) {
     if (error) console.error(error);
     else {
       const { text } = JSON.parse(body);
