@@ -17,6 +17,7 @@ const client = new Twitter({
   const adviceUrl = "https://api.adviceslip.com/advice";
   const breakingBadUrl = "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
   const ronUrl = "http://ron-swanson-quotes.herokuapp.com/v2/quotes";
+  const numbersUrl = "http://numbersapi.com/random?json";
 
   // Tweet image and advice
   request(fileUrl)
@@ -76,6 +77,21 @@ const client = new Twitter({
     } catch (error) {
       console.log(`Error tweeting ${data}`);
       console.error(error);
+    }
+  });
+
+  // Tweet numbers
+  request(numbersUrl, function(error, response, body) {
+    if (error) console.error(error);
+    else {
+      const { text } = JSON.parse(body);
+      try {
+        await client.post("statuses/update", { status: text });
+        console.log(`Tweeted out that ${text}`);
+      } catch (error) {
+        console.log(`Error tweeting ${text}`);
+        console.error(error);
+      }
     }
   });
 })();
