@@ -69,16 +69,16 @@ const client = new Twitter({
   });
 
   // Tweet Ron
-  request(ronUrl, async function(error, res, body) {
-    const data = JSON.parse(body).pop();
-    try {
-      await client.post("statuses/update", { status: data });
-      console.log(`Tweeted out that ${data}`);
-    } catch (error) {
-      console.log(`Error tweeting ${data}`);
-      console.error(error);
-    }
-  });
+  // request(ronUrl, async function(error, res, body) {
+  //   const data = JSON.parse(body).pop();
+  //   try {
+  //     await client.post("statuses/update", { status: data });
+  //     console.log(`Tweeted out that ${data}`);
+  //   } catch (error) {
+  //     console.log(`Error tweeting ${data}`);
+  //     console.error(error);
+  //   }
+  // });
 
   // Tweet numbers
   request(numbersUrl, async function(error, response, body) {
