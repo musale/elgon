@@ -32,6 +32,12 @@ jobs:
       - install
       - run: node lyrics.js
 
+  movies:
+    <<: *defaults
+    steps:
+      - install
+      - run: node movies.js
+
 workflows:
   version: 2
 
@@ -48,6 +54,12 @@ workflows:
             branches:
               only:
                 - lyrics
+
+      - movies:
+          filters:
+            branches:
+              only:
+                - movies
 
   poll:
     triggers:
@@ -72,3 +84,19 @@ workflows:
             branches:
               only:
                 - lyrics
+
+  movpoll:
+    triggers:
+      - schedule:
+          # Every day at six
+          cron: "0 6 * * *"
+          filters:
+            branches:
+              only:
+                - movies
+    jobs:
+      - movies:
+          filters:
+            branches:
+              only:
+                - movies
