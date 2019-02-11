@@ -59,6 +59,8 @@ function tweetLyrics(lyricsUrl, song, artiste, retry = 0) {
     } else {
       const splitLyrics = lyrics.split("\n").filter(n => n);
       const tweetStr = chopLyricsToTweet(splitLyrics, artiste);
+      console.log(tweetStr);
+      console.log(`${"-".repeat(splitLyrics.shift().length)}`);
       try {
         await client.post("statuses/update", { status: tweetStr });
         console.log(`Tweeted out that ${tweetStr}`);
@@ -71,9 +73,10 @@ function tweetLyrics(lyricsUrl, song, artiste, retry = 0) {
   });
 }
 function chopLyricsToTweet(splitLyrics, artiste, retry = 0) {
-  if (retry >= lyricSize) return;
+  if (retry >= 10) return;
   const minRange = getRandom(0, splitLyrics.length - lyricSize);
-  const tweetStrList = splitLyrics.slice(minRange, minRange + lyricSize);
+  let tweetStrList = splitLyrics.slice(minRange, minRange + lyricSize);
+  tweetStrList = [...new Set(tweetStrList)];
   // If I want to add hashtags
   // const tweetStr = `${tweetStrList.join("\n")}\n#${artiste.replace(
   //   /\s+/g,
