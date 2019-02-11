@@ -21,8 +21,8 @@ const client = new Twitter({
       "body > div > div.content > table > tbody > tr:nth-child(1)"
     );
     const items = tr.children;
-    const firstTweet = `[${new Date().toLocaleString()}] Today's top row on http://xpau.se`;
-    const replyTo = await firstTweet(firstTweet);
+    const fTweet = `[${new Date().toLocaleString()}] Today's top row on http://xpau.se`;
+    const replyTo = await firstTweet(fTweet);
     const tweetId0 = await tweet(items[0], replyTo, 0);
     const tweetId1 = await tweet(items[1], tweetId0, 1);
     const tweetId2 = await tweet(items[2], tweetId1, 2);
