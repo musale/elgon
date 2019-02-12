@@ -26,14 +26,12 @@ function getRandom(min, max) {
 }
 
 (async () => {
-  for (let i = 0; i < lyricSize; i++) {
-    const artiste = pickRandomProperty(db);
-    const items = db[artiste];
-    const song = items[(items.length * Math.random()) | 0];
-    const lyricsUrl = encodeURI(`${lyricsBaseUrl}/${artiste}/${song}`);
+  const artiste = pickRandomProperty(db);
+  const items = db[artiste];
+  const song = items[(items.length * Math.random()) | 0];
+  const lyricsUrl = encodeURI(`${lyricsBaseUrl}/${artiste}/${song}`);
 
-    tweetLyrics(lyricsUrl, song, artiste);
-  }
+  tweetLyrics(lyricsUrl, song, artiste);
 })();
 
 function tweetLyrics(lyricsUrl, song, artiste, retry = 0) {
