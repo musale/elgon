@@ -1,5 +1,6 @@
 const fs = require("fs");
 const request = require("request");
+const badwordsArray = require("badwords/array");
 
 require("dotenv").config();
 
@@ -11,13 +12,32 @@ const client = new Twitter({
   access_token: process.env.ACCESS_TOKEN,
   access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
+const adviceUrl = "https://api.adviceslip.com/advice";
+
+function getAdvice() {
+  return new Promise(function(resolve, reject) {
+    request(adviceUrl, function(error, response, body) {
+      const slip = JSON.parse(body);
+      const advice = slip["slip"]["advice"];
+      return resolve(advice);
+    });
+  });
+}
+
+async function sanitize(advice, retry = 0) {
+  if (retry > 4) return "";
+  const adviceList = advice.split();
+  for (let i = 0; i < adviceList.length; i++) {
+    const word = adviceList[i];
+    if (badwordsArray.includes(word)) {
+      const newAdvice = await getAdvice();
+      return sanitize(newAdvice, retry + 1);
+    } else return advice;
+  }
+}
 
 (async () => {
   const fileUrl = "https://picsum.photos/1024/512/?random";
-  const adviceUrl = "https://api.adviceslip.com/advice";
-  // const breakingBadUrl = "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
-  // const ronUrl = "http://ron-swanson-quotes.herokuapp.com/v2/quotes";
-  // const numbersUrl = "http://numbersapi.com/random?json";
 
   // Tweet image and advice
   request(fileUrl)
@@ -33,9 +53,10 @@ const client = new Twitter({
           },
           async function(err, data, response) {
             const mediaIdStr = data.media_id_string;
+
+            const gotAdvice = await getAdvice();
+            const advice = await sanitize(gotAdvice);
             request(adviceUrl, async function(error, response, body) {
-              const slip = JSON.parse(body);
-              const advice = slip["slip"]["advice"];
               const tweetParams = {
                 status: advice,
                 media_ids: [mediaIdStr]
@@ -53,45 +74,4 @@ const client = new Twitter({
         console.error(`Creating media error: ${error.message}`);
       }
     });
-
-  // Tweet breaking bad
-  // request(breakingBadUrl, async function(error, res, body) {
-  //   const data = JSON.parse(body);
-  //   const { quote, author } = data.pop();
-  //   const status = `${quote}\n— ${author}`;
-  //   try {
-  //     await client.post("statuses/update", { status });
-  //     console.log(`Tweeted out that ${status}`);
-  //   } catch (error) {
-  //     console.log(`Error tweeting ${status}`);
-  //     console.error(error);
-  //   }
-  // });
-
-  // Tweet Ron
-  // request(ronUrl, async function(error, res, body) {
-  //   const data = JSON.parse(body).pop();
-  //   try {
-  //     await client.post("statuses/update", { status: data });
-  //     console.log(`Tweeted out that ${data}`);
-  //   } catch (error) {
-  //     console.log(`Error tweeting ${data}`);
-  //     console.error(error);
-  //   }
-  // });
-
-  // Tweet numbers
-  // request(numbersUrl, async function(error, response, body) {
-  //   if (error) console.error(error);
-  //   else {
-  //     const { text } = JSON.parse(body);
-  //     try {
-  //       await client.post("statuses/update", { status: text });
-  //       console.log(`Tweeted out that ${text}`);
-  //     } catch (error) {
-  //       console.log(`Error tweeting ${text}`);
-  //       console.error(error);
-  //     }
-  //   }
-  // });
 })();
