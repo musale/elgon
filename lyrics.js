@@ -57,15 +57,42 @@ function tweetLyrics(lyricsUrl, song, artiste, retry = 0) {
     } else {
       const splitLyrics = lyrics.split("\n").filter(n => n);
       const tweetStr = chopLyricsToTweet(splitLyrics, artiste);
-      console.log(tweetStr);
-      console.log(`${"-".repeat(splitLyrics.shift().length)}`);
-      try {
-        await client.post("statuses/update", { status: tweetStr });
-        console.log(`Tweeted out that ${tweetStr}`);
-      } catch (error) {
-        console.log(`Error tweeting ${tweetStr}`);
-        console.error(error);
-      }
+      const fileUrl = "https://picsum.photos/1024/512/?random";
+
+      // Tweet image
+      request(fileUrl)
+        .pipe(fs.createWriteStream("image.png"))
+        .on("finish", async () => {
+          const pathToImage = "image.png";
+          const mediaData = fs.readFileSync(pathToImage, {
+            encoding: "base64"
+          });
+          try {
+            client.post(
+              "media/upload",
+              {
+                media_data: mediaData
+              },
+              async function(err, data, response) {
+                const mediaIdStr = data.media_id_string;
+                try {
+                  const tweetParams = {
+                    status: tweetStr,
+                    media_ids: [mediaIdStr]
+                  };
+                  await client.post("statuses/update", tweetParams);
+                  console.log(`Tweeted out that ${tweetStr}`);
+                } catch (error) {
+                  console.log(`Error tweeting ${tweetStr}`);
+                  console.error(error);
+                }
+              }
+            );
+          } catch (error) {
+            console.log(`Error tweeting ${tweetStr}`);
+            console.error(error);
+          }
+        });
       return;
     }
   });
