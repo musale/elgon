@@ -20,46 +20,22 @@ commands:
             - node_modules
 
 jobs:
-  tweet:
-    <<: *defaults
-    steps:
-      - install
-      - run: node index.js
-
   lyrics:
     <<: *defaults
     steps:
       - install
       - run: node lyrics.js
 
-  movies:
-    <<: *defaults
-    steps:
-      - install
-      - run: node movies.js
-
 workflows:
   version: 2
 
   test:
     jobs:
-      - tweet:
-          filters:
-            branches:
-              only:
-                - master
-
       - lyrics:
           filters:
             branches:
               only:
-                - lyrics
-
-      - movies:
-          filters:
-            branches:
-              only:
-                - movies
+                - master
 
   poll:
     triggers:
@@ -70,33 +46,10 @@ workflows:
             branches:
               only:
                 - master
-                - lyrics
 
     jobs:
-      - tweet:
-          filters:
-            branches:
-              only:
-                - master
-
       - lyrics:
           filters:
             branches:
               only:
-                - lyrics
-
-  movpoll:
-    triggers:
-      - schedule:
-          # Every day at six
-          cron: "0 6 * * *"
-          filters:
-            branches:
-              only:
-                - movies
-    jobs:
-      - movies:
-          filters:
-            branches:
-              only:
-                - movies
+                - master
