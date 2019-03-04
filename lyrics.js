@@ -107,7 +107,7 @@ function chopLyricsToTweet(splitLyrics, artiste, retry = 0) {
   //   /\s+/g,
   //   ""
   // )}`.trim();
-  const unSanitizedTweet = tweetStrList.join("\n").trim();
+  const tweetStr = tweetStrList.join("\n").trim();
   // const tweetStr = sanitizeTweet(unSanitizedTweet);
   if (tweetStr.length <= 280) return tweetStr;
   else return chopLyricsToTweet(splitLyrics, artiste, retry + 1);
