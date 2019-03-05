@@ -1,697 +1,694 @@
 {
-  "Steve Winwood": [
-    "Higher Love"
+  "Eric Clapton": [
+    "Tears in Heaven"
+  ],
+  "George Jones": [
+    "He Stopped Loving Her Today"
+  ],
+  "Johnny Cash": [
+    "Hurt"
+  ],
+  "REM": [
+    "Everybody Hurts"
+  ],
+  "Roy Orbison": [
+    "Crying",
+    "It's Over",
+    "Only the Lonely",
+    "In the Real World"
+  ],
+  "Gilbert O'Sullivan": [
+    "Alone Again"
+  ],
+  "The Beatles": [
+    "Yesterday",
+    "Eleanor Rigby",
+    "Let it Be",
+    "She's Leaving Home",
+    "The Long and Winding Road",
+    "In My Life",
+    "Hey Jude",
+    "Nowhere Man"
+  ],
+  "Bread": [
+    "If",
+    "Everything I Own",
+    "Lost Without Your Love"
+  ],
+  "Bobby Goldsboro": [
+    "Honey"
+  ],
+  "Harry Chapin": [
+    "Cat's in the Cradle"
+  ],
+  "Kansas": [
+    "Dust in the Wind"
+  ],
+  "Pearl Jam": [
+    "Last Kiss",
+    "Black"
+  ],
+  "Sinead O'Conner": [
+    "Nothing Compares 2 You"
+  ],
+  "Jeff Buckley": [
+    "Hallelujah",
+    "Lover, You Should Have Come Over"
+  ],
+  "Gary Jules": [
+    "Mad World"
+  ],
+  "Hank Williams": [
+    "I'm So Lonesome I Could Cry",
+    "Your Cheatin' Heart"
+  ],
+  "Karen Carpenter": [
+    "Superstar"
   ],
   "Goo Goo Dolls": [
     "Iris"
   ],
-  "Anne Murray": [
-    "You Needed Me"
-  ],
-  "Amy Grant": [
-    "Baby Baby"
-  ],
-  "Toto": [
-    "Rosanna"
-  ],
-  "Rupert Holmes": [
-    "Escape (The Pina Colada Song)"
-  ],
-  "Loggins and Messina": [
-    "Danny's Song"
-  ],
-  "Rihanna": [
-    "What's My Name? featuring Drake"
-  ],
-  "Cure": [
-    "Lovesong"
-  ],
   "Barbra Streisand": [
-    "Love Theme From A Star Is Born (Evergreen)"
+    "Memories",
+    "The Way We Were"
   ],
-  "John Lennon": [
-    "(Just Like) Starting Over",
-    "Imagine"
+  "Nazareth": [
+    "Love Hurts"
+  ],
+  "The Cars": [
+    "Drive"
+  ],
+  "Luther Vandross": [
+    "Dance With My Father"
+  ],
+  "Bonnie Rait": [
+    "I Can't Make You Love Me"
+  ],
+  "Braid Paisley & Alison Krausse": [
+    "Whiskey Lullaby"
+  ],
+  "Frank Sinatra": [
+    "In The Wee Small Hours of the Morning",
+    "I'm a Fool to Want You",
+    "I'll Be Seeing You",
+    "Blue Moon",
+    "Three Coins in the Fountain"
+  ],
+  "Mark Dinning": [
+    "Teen Angel"
+  ],
+  "The Carpenters": [
+    "Goodbye to Love",
+    "Solitaire",
+    "Rainy Days and Mondays",
+    "We've Only Just Begun"
+  ],
+  "Elton John": [
+    "Sorry Seems to Be the Hardest Word",
+    "Your Song",
+    "Candle in the Wind",
+    "Daniel",
+    "Goodbye Yellow Brick Road"
+  ],
+  "Verve": [
+    "Drugs Don't Work"
+  ],
+  "Cat Stevens": [
+    "Wild World"
+  ],
+  "Nick Drake": [
+    "Pink Moon",
+    "Black Eyed Dog"
+  ],
+  "Kate Bush": [
+    "This Woman's Work"
+  ],
+  "Martina McBride": [
+    "Concrete Angel"
+  ],
+  "Phil Collins": [
+    "Against All Odds",
+    "Separate Lives"
+  ],
+  "Little Anthony & The Imperials": [
+    "Goin' Out of My Head",
+    "Tears on My Pillow"
+  ],
+  "Radiohead": [
+    "Creep",
+    "No Surprises"
   ],
   "Elvis Presley": [
+    "Are You Lonesome Tonight?",
+    "For the Good Times",
+    "Don't Cry Daddy",
+    "In the Ghetto",
+    "Danny Boy",
+    "Can't Help Falling in Love with You",
+    "Mama Liked the Roses",
     "Love Me Tender",
-    "Can't Help Falling In Love",
-    "Are You Lonesome Tonight"
+    "Amazing Grace",
+    "Kentucky Rain",
+    "You Don't Have to Say You Love Me",
+    "How Great Thou Art"
   ],
-  "Plain White T's": [
-    "Hey There Delilah"
+  "Art Garfunkel": [
+    "Bright Eyes"
   ],
-  "Taylor Swift": [
-    "Love Story"
-  ],
-  "Melanie": [
-    "Brand New Key"
-  ],
-  "The Association": [
-    "Cherish"
-  ],
-  "Savage Garden": [
-    "Truly, Madly, Deeply"
-  ],
-  "Vanessa Williams": [
-    "Save the Best for Last"
-  ],
-  "Tina Turner": [
-    "The Best",
-    "What's Love Got To Do With It"
-  ],
-  "K": [
-    "Ci and JoJo"
-  ],
-  "Suzi Quatro and Chris Norman": [
-    "Stumblin' In"
-  ],
-  "Joe Cocker and Jennifer Warnes": [
-    "Up Where We Belong"
-  ],
-  "Herb Alpert": [
-    "This Guy's In Love With You"
-  ],
-  "Peter Frampton": [
-    "Baby, I Love Your Way"
-  ],
-  "Bryan Adams": [
-    "(Everything I Do) I Do It For You",
-    "Please Forgive Me",
-    "Everything I Do) I Do It For You",
-    "Heaven",
-    "Have You Ever Loved A Woman"
-  ],
-  "Captain & Tennille": [
-    "Love Will Keep Us Together"
-  ],
-  "Diana Ross & Lionel Richie": [
-    "Endless Love"
-  ],
-  "Partridge Family": [
-    "I Think I Love You"
-  ],
-  "Barry White": [
-    "You're the First, My Last, My Everything"
-  ],
-  "Boyz II Men": [
-    "I'll Make Love to You"
-  ],
-  "Stylistics": [
-    "Betcha By Golly, Wow"
-  ],
-  "Delaney & Bonnie & Friends": [
-    "Never Ending Song of Love"
-  ],
-  "Anita Baker": [
-    "Sweet Love"
-  ],
-  "Bread": [
-    "If"
-  ],
-  "Beach Boys": [
-    "Wouldn't It Be Nice",
-    "God Only Knows",
-    "Surfer Girl"
-  ],
-  "Dawn feat. Tony Orlando": [
-    "Tie a Yellow Ribbon Round the Ole Oak Tree"
-  ],
-  "Wings": [
-    "Silly Love Songs"
-  ],
-  "George Michael": [
-    "Father Figure"
-  ],
-  "Dan Fogelberg": [
-    "Longer",
-    "Same Old Lang Syne",
-    "Leader Of The Band",
-    "The Last Nail"
-  ],
-  "INXS": [
-    "Never Tear Us Apart"
-  ],
-  "Joni Mitchell": [
-    "Help Me"
-  ],
-  "Celine Dion": [
-    "My Heart Will Go On (Love Theme From 'Titanic')"
-  ],
-  "John Cougar Mellencamp": [
-    "Jack and Diane"
-  ],
-  "Johnny Cash": [
-    "Ring of Fire"
-  ],
-  "Stevie Wonder": [
-    "You Are the Sunshine Of My Life"
-  ],
-  "Peabo Bryson and Regina Belle": [
-    "A Whole New World (Aladdin's Theme)"
-  ],
-  "Deborah Cox": [
-    "Nobody's Supposed To Be Here"
-  ],
-  "The Pretenders": [
-    "I'll Stand By You"
-  ],
-  "Rod Stewart": [
-    "Maggie May",
-    "Have I Told You Lately"
-  ],
-  "Basia": [
-    "Time and Tide"
-  ],
-  "The Turtles": [
-    "Happy Together"
-  ],
-  "Sam Cooke": [
-    "You Send Me",
-    "Frankie And Johnny"
-  ],
-  "Beyonce featuring Jay": [
-    "Z"
-  ],
-  "Minnie Riperton": [
-    "Lovin' You"
-  ],
-  "Heatwave": [
-    "Always and Forever"
-  ],
-  "Jason Mraz": [
-    "I'm Yours"
-  ],
-  "Al Green": [
-    "Let's Stay Together"
-  ],
-  "Janis Joplin": [
-    "Me and Bobby McGee"
-  ],
-  "Joe Cocker": [
-    "You Are So Beautiful"
-  ],
-  "Bruno Mars": [
-    "Just the Way You Are"
-  ],
-  "Olivia Newton": [
-    "John"
+  "Neil Diamond & Barbra Streisand": [
+    "You Don't Bring Me Flowers"
   ],
   "John Denver": [
-    "Annie's Song"
+    "Annie's Song",
+    "Rocky Mountain High"
   ],
-  "Bette Midler": [
-    "The Rose"
+  "Bright Eyes": [
+    "Lime Tree"
   ],
-  "Alice Cooper": [
-    "You and Me",
-    "Only Women Bleed"
+  "Boyz II Men": [
+    "It's So Hard to Say Goodbye to Yesterday",
+    "End of the Road"
   ],
-  "Jackson 5": [
-    "I'll Be There"
+  "Patsy Cline": [
+    "Crazy",
+    "I Fall to Pieces",
+    "She's Got You"
   ],
-  "Madonna": [
-    "Crazy For You"
+  "Skeeter Davis": [
+    "The End of the World"
   ],
-  "Jim Croce": [
-    "Time in a Bottle"
+  "P. Diddy & Faith Evans": [
+    "I'll Be Missing You"
   ],
-  "Mariah Carey": [
-    "Fantasy"
+  "Judy Collins": [
+    "Send in the Clowns",
+    "Amazing Grace"
   ],
-  "Temptations": [
-    "My Girl"
+  "The Smiths": [
+    "I know It's Over",
+    "Asleep",
+    "There Is A Light That Never Goes Out"
   ],
-  "Edwin McCain": [
-    "I'll Be"
+  "Meat Loaf": [
+    "Two Out of Three Ain't Bad",
+    "I'd Do Anything for Love (But I Won't Do That)"
   ],
-  "Marvin Gaye": [
-    "Let's Get It On"
+  "Evanescence": [
+    "My Immortal",
+    "Bring Me to Life",
+    "Hello"
   ],
-  "Whitney Houston": [
-    "I Will Always Love You"
+  "Willie Nelson": [
+    "Always on My Mind"
   ],
-  "Aerosmith": [
-    "I Don't Want To Miss a Thing",
-    "I Don't Want to Miss a Thing",
-    "Dream On",
-    "Angel"
+  "Peter, Paul and Mary": [
+    "Leaving on a Jet Plane"
   ],
-  "Percy Sledge": [
-    "When a Man Loves a Woman"
+  "Simon & Garfunkel": [
+    "Sounds of Silence",
+    "Bridge Over Troubled Water"
   ],
-  "Mary Wells": [
-    "'My Guy"
+  "The Manhattans": [
+    "Kiss and Say Goodbye"
   ],
-  "Oasis": [
-    "Wonderwall"
-  ],
-  "Modern English": [
-    "I Melt With You"
-  ],
-  "Carpenters": [
-    "(They Long To Be) Close To You"
-  ],
-  "Oleta Adams": [
-    "Get Here"
+  "No Doubt": [
+    "Don't Speak"
   ],
   "Journey": [
     "Faithfully",
     "Open Arms"
   ],
-  "Cyndi Lauper": [
-    "Time After Time"
+  "Susan Boyle": [
+    "I Dreamed a Dream"
   ],
-  "Roberta Flack and Donny Hathaway": [
-    "The Closer I Get to You"
+  "Bonnie Tyler": [
+    "Total Eclipse of the Heart"
   ],
-  "Jackie Wilson": [
-    "(Your Love Keeps Lifting Me) Higher and Higher"
+  "The Cure": [
+    "Pictures of You"
   ],
-  "Peabo Bryson and Roberta Flack": [
-    "Tonight I Celebrate My Love"
+  "Newsong": [
+    "Christmas Shoes"
   ],
-  "Adele": [
-    "Make You Feel My Love"
+  "Billie Holiday": [
+    "Gloomy Sunday",
+    "Strange Fruit",
+    "Don't Worry 'Bout Me",
+    "I Get Along Without You Very Well"
   ],
-  "Marvin Gaye and Tammi Terrell": [
-    "Ain't No Mountain High Enough"
+  "Dan Fogelberg": [
+    "Leader of the Band",
+    "Same Old Lang Syne"
   ],
-  "Ashford and Simspon": [
-    "Solid"
+  "John Lennon": [
+    "Imagine"
   ],
-  "Box Tops": [
-    "The Letter"
+  "Reba McEntire": [
+    "If I Had Only Known",
+    "The Greatest Man I Never Knew"
   ],
-  "Snow Patrol": [
-    "Chasing Cars"
+  "Bob Carlisle": [
+    "Butterfly Kisses"
   ],
-  "Sonny & Cher": [
-    "I Got You Babe"
+  "Smokey Robinson & The Miracles": [
+    "The Tracks of My Tears"
   ],
-  "The Beatles": [
-    "And I Love Her",
-    "Something",
-    "Yesterday",
-    "In My Life",
-    "Across the Universe",
-    "Julia"
+  "Whitney Houston": [
+    "I Will Always Love You"
   ],
-  "Peter Gabriel": [
-    "In Your Eyes"
+  "Better Midler": [
+    "The Rose"
   ],
-  "Righteous Brothers": [
-    "Unchained Melody",
-    "You've Lost That Lovin' Feeling"
+  "Frankie Lane": [
+    "I Believe"
   ],
-  "Elton John": [
-    "Your Song",
-    "Candle in the Wind 1997",
-    "Tiny Dancer",
-    "Candle In The Wind",
-    "Daniel",
-    "The One",
-    "Don't Let The Sun Go Down On Me"
+  "Amy Winehouse": [
+    "Back to Black"
   ],
-  "Eric Clapton": [
-    "Wonderful Tonight",
-    "Tears in Heaven"
+  "Reba McEntire & Kelly Clarkson": [
+    "Because of You"
   ],
-  "Billy Joel": [
-    "Just the Way You Are",
-    "Piano Man",
-    "New York State Of Mind",
-    "Honesty",
-    "Scenes From An Italian Resturant",
-    "She's Always A Woman To Me"
-  ],
-  "Paul McCartney": [
-    "Maybe I'm Amazed"
-  ],
-  "Roberta Flack": [
-    "The First Time Ever I Saw Your Face"
-  ],
-  "Simon & Garfunkel": [
-    "Bridge Over Troubled Water",
-    "The Sounds of Silence"
-  ],
-  "Beatles": [
-    "Let It Be",
-    "Hey Jude",
-    "Something",
-    "The Long and Winding Road",
-    "Michelle",
-    "Dear Prudence"
-  ],
-  "Roy Orbison": [
-    "Crying",
-    "Only The Lonely",
-    "Running Scared",
-    "It's Over"
-  ],
-  "Everly Brothers": [
-    "All I Have To Do Is Dream"
-  ],
-  "Bob Dylan": [
-    "Knockin' On Heavens Door",
-    "Hurricane",
-    "Desolation Row",
-    "It's All Over Now"
-  ],
-  "Rolling Stones": [
-    "Angie",
-    "Wild Horses",
-    "As Tears Go By",
-    "Ruby Tuesday"
+  "Mike & The Mechanics": [
+    "The Living Years"
   ],
   "Don McLean": [
-    "American Pie"
+    "Vincent"
   ],
-  "Pink Floyd": [
-    "Wish You Were Here",
-    "High Hopes",
-    "Hey You",
-    "Goodbye Blue Sky"
+  "Metallica": [
+    "Fade to Black",
+    "One"
   ],
-  "Nazareth": [
-    "Love Hurts"
+  "Jason Micheal Caroll": [
+    "Alyssa Lies"
   ],
-  "Led Zeppelin": [
-    "Stairway to Heaven",
-    "The Rain Song",
-    "All Of My Love"
+  "Blink 182": [
+    "Adam's Song"
   ],
-  "J. Frank Wilson & the Cavaliers": [
-    "Last Kiss"
+  "U2": [
+    "With or Without You"
   ],
-  "The Cars": [
-    "Drive"
+  "Portished": [
+    "Roads"
   ],
-  "Eagles": [
-    "Desperado",
-    "I Can't Tell You Why"
+  "Sarah McLachlan": [
+    "Angel",
+    "I Will Remember You"
   ],
-  "Queen": [
-    "Who Wants To Live Forever",
-    "Somebody To Love",
-    "The Show Must Go On",
-    "The Love Of My Life",
-    "Save Me"
+  "Celine Dion": [
+    "All By Myself",
+    "My Heart Will Go On"
   ],
-  "Chicago": [
-    "You're The Inspiration",
-    "Hard To Say I'm Sorry",
-    "Will You Still Love Me"
+  "The Verve Pipe": [
+    "The Freshmen"
   ],
-  "Kansas": [
-    "Dust In The Wind"
-  ],
-  "Guns N' Roses": [
-    "November Rain",
-    "Patience",
-    "Sweet Child O' Mine"
-  ],
-  "Allman Brothers Band": [
-    "Melissa"
-  ],
-  "Hollies": [
-    "He Ain't Heavy He's My Brother"
-  ],
-  "Lynyrd Skynyrd": [
-    "Free Bird",
-    "Tuesdays Gone"
-  ],
-  "REO Speedwagon": [
-    "Can't Fight This Feeling",
-    "In My Dreams",
-    "Keep On Loving You"
-  ],
-  "Elvis Costello": [
-    "She"
-  ],
-  "Phil Collins/Eric Clapton": [
-    "I Wish It Would Rain Down"
-  ],
-  "Moody Blues": [
-    "Nights in White Satin"
-  ],
-  "The Who": [
-    "Love Reign O'er Me",
-    "Behind Blue Eyes"
-  ],
-  "Chris De Burgh": [
-    "The Lady In Red"
-  ],
-  "Berlin": [
-    "Take My Breath Away"
+  "Garth Brooks": [
+    "If Tomorrow Never Comes",
+    "The Dance",
+    "What She's Doing Now",
+    "Unanswered Prayers",
+    "The River"
   ],
   "Barry Manilow": [
     "Mandy"
   ],
-  "Cutting Crew": [
-    "I Just) Died In Your Arms Tonight"
+  "Elliot Smith": [
+    "Twilight"
   ],
-  "Firehouse": [
-    "When I Look Into Your Eyes",
-    "Love Of A Lifetime"
+  "The Pretenders": [
+    "I Go To Sleep"
   ],
-  "Bon Jovi": [
-    "Always",
-    "Bed Of Roses",
-    "Wanted Dead Or Alive"
+  "Josh Groban": [
+    "To Where You Are",
+    "Broken Vow"
   ],
-  "Foreigner": [
-    "I Want To Know What Love Is"
+  "Lonestar": [
+    "I'm Already There"
+  ],
+  "Ray Peterson": [
+    "Tell Laura I Love Her"
+  ],
+  "James Taylor": [
+    "Fire and Rain"
+  ],
+  "Coldplay": [
+    "The Scientist"
+  ],
+  "Nitty Gritty Dirt Band": [
+    "Mr. Bojangles"
+  ],
+  "James Blunt": [
+    "Goodbye My Lover",
+    "You're Beautiful"
+  ],
+  "Ray Charles": [
+    "You Don't Know Me",
+    "Georgia on My Mind"
+  ],
+  "Joe Nichols": [
+    "I'll Wait For You"
+  ],
+  "Connie Francis": [
+    "Mama"
+  ],
+  "Limp Bizkit": [
+    "Behind Blue Eyes"
+  ],
+  "The Everly Brothers": [
+    "So Sad (To Watch Good Love Go Bad)",
+    "Bye Bye Love"
+  ],
+  "The Band": [
+    "It Makes No Difference",
+    "Rockin' Chair"
+  ],
+  "Randy Crawford": [
+    "One Day I'll Fly Away"
+  ],
+  "The Platters": [
+    "Smoke Gets In Your Eyes",
+    "Harbor Lights"
+  ],
+  "Love": [
+    "Alone Again Or"
+  ],
+  "Dusty Springfield": [
+    "I Just Don't Know What To Do With Myself"
+  ],
+  "Little Feat": [
+    "Long Distance Love"
+  ],
+  "Lorraine Ellison": [
+    "Stay With Me"
+  ],
+  "Otis Redding": [
+    "I've Been Loving You Too Long"
+  ],
+  "Kate and Anna McGarrigle": [
+    "Heart Like A Wheel"
+  ],
+  "Simon and Garfunkel": [
+    "I am a Rock"
+  ],
+  "Christina Aguilera": [
+    "Hurt",
+    "Beautiful"
+  ],
+  "Gladys Knight & The Pips": [
+    "Midnight Train to Georgia"
+  ],
+  "Ben Folds Five": [
+    "Brick"
+  ],
+  "Nat King Cole": [
+    "Smile",
+    "Mona Lisa"
+  ],
+  "Air Supply": [
+    "All Out of Love",
+    "Without You",
+    "Even the Nights Are Better"
+  ],
+  "The Marmalade": [
+    "Reflections of My Life"
+  ],
+  "Sarah Brightman": [
+    "The Last Words You Said"
+  ],
+  "Exposé": [
+    "I'll Never Get Over You Getting Over Me"
+  ],
+  "Led Zeppelin": [
+    "Stairway to Heaven"
+  ],
+  "Linda Ronstadt": [
+    "Hurt So Bad"
+  ],
+  "Eminem": [
+    "Stan"
+  ],
+  "Richie Valens": [
+    "Oh Donna"
+  ],
+  "PowerSource": [
+    "Dear Mr. Jesus"
+  ],
+  "The Beach Boys": [
+    "Don't Worry Baby"
+  ],
+  "Britney Spears": [
+    "Where Are You Now",
+    "Lucky"
+  ],
+  "Julie London": [
+    "Cry Me a River"
+  ],
+  "Collin Raye": [
+    "Love, Me"
+  ],
+  "Eddy Arnold": [
+    "Make the World Go Away"
+  ],
+  "Sam Cooke": [
+    "A Change Is Gonna Come"
+  ],
+  "Sugarland": [
+    "Stay"
+  ],
+  "Roberta Flack": [
+    "Killing Me Softly"
+  ],
+  "Andrea Bocelli & Sarah Brightman": [
+    "Time to Say Goodbye"
+  ],
+  "Once soundtrack": [
+    "Lies",
+    "Falling Slowly"
+  ],
+  "Righteous Brothers": [
+    "Unchained Melody",
+    "You've Lost that Lovin' Feelin'"
   ],
   "Chris Isaak": [
     "Wicked Game"
   ],
-  "Buddy Holly": [
-    "True Love Ways"
+  "Diana Ross & the Supremes": [
+    "Love Child"
+  ],
+  "The Hollies": [
+    "He Ain't Heavy, He's My Brother"
+  ],
+  "My Chemical Romance": [
+    "I Don't Love You",
+    "I'm Not Okay (I Promise)"
+  ],
+  "Bette Midler": [
+    "Wind Beneath My Wings"
+  ],
+  "Kirk Franklin, Bono, C. Lewis, M.J. Blige": [
+    "Lean on Me"
+  ],
+  "Queen": [
+    "Love of My Life"
+  ],
+  "Lionel Ritchie & Diana Ross": [
+    "Endless Love"
+  ],
+  "Kenny Rogers": [
+    "She Believes in Me",
+    "Lady"
+  ],
+  "B.J. Thomas": [
+    "Raindrops Keep Falling on My Head"
+  ],
+  "Christina Perri": [
+    "Jar of Hearts"
+  ],
+  "Neil Diamond": [
+    "I am... I Said",
+    "Song Sung Blue",
+    "September Morn"
+  ],
+  "Bobby Vinton": [
+    "Take Good Care of My Baby",
+    "Sealed With a Kiss"
   ],
   "Richard Marx": [
     "Right Here Waiting"
   ],
-  "Barbra Streisand/Neil Diamond": [
-    "You Don't Bring Me Flowers"
+  "Escape Club": [
+    "I'll Be There"
   ],
-  "Kenny Loggins": [
-    "Meet Me Half Way"
+  "Simple Plan": [
+    "Perfect"
   ],
-  "Bob Seger": [
-    "We've Got Tonight",
-    "Main Street",
-    "Turn The Page"
+  "Judy Garland": [
+    "Over the Rainbow"
   ],
-  "Jimi Hendrix Experience": [
-    "Little Wing",
-    "Wind Cries Mary"
+  "Backstreet Boys": [
+    "Show Me the Meaning of Being Lonely"
   ],
-  "Dan Hill": [
-    "Sometimes When We Touch"
+  "Tim McGraw": [
+    "Don't Take the Girl",
+    "If You're Reading This"
   ],
-  "Paul Young": [
-    "Everytime You Go Away"
+  "Damien Rice": [
+    "The Blower's Daughter"
   ],
-  "U2": [
-    "One",
-    "With Or Without You"
+  "Clarence Carter": [
+    "Patches"
   ],
-  "Eric Carmen": [
-    "All By Myself",
-    "Hungry Eyes"
+  "Brook Benton": [
+    "Rainy Night in Georgia"
   ],
-  "Alias": [
-    "More Than Words Can Say"
+  "Dixie Chicks": [
+    "Travelin' Soldier"
   ],
-  "Heart": [
-    "These Dreams",
-    "Alone"
+  "Terry Jacks": [
+    "Seasons in the Sun"
   ],
-  "Styx": [
-    "Lady",
-    "Babe"
+  "Kellie Pickler": [
+    "I Wonder"
   ],
-  "Neil Diamond": [
-    "Hello Again"
+  "Rolf Harris": [
+    "Two Little Boys"
   ],
-  "Ritchie Valens": [
-    "Donna"
+  "Natalie Cole": [
+    "Unforgettable"
   ],
-  "The Doors": [
-    "The Crystal Ship"
+  "Back Street Boys": [
+    "Incomplete"
   ],
-  "Peter Cetera": [
-    "Glory Of Love"
+  "Kenny Chesney": [
+    "Better as a Memory"
   ],
-  "Green Day": [
-    "Good Riddance (Time of Your Life)"
+  "Chicago": [
+    "If You Leave Me Now"
   ],
-  "Kris Kristofferson / Janis Joplin": [
-    "Me And Bobby McGee"
+  "Little Texas": [
+    "What Might Have Been"
   ],
-  "Fleetwood Mac": [
-    "Sara"
+  "Andy Williams": [
+    "Moon River",
+    "Can't Get Used to Losing You"
   ],
-  "Cheap Trick": [
-    "The Flame"
+  "Pink": [
+    "Family Portrait",
+    "Who Knew"
   ],
-  "Bad English": [
-    "When I See You Smile"
+  "Four Seasons": [
+    "Rag Doll",
+    "Let's Hang On"
   ],
-  "Bee Gees": [
-    "New York Mining Disaster 1941"
+  "The Shangri": [
+    "Las"
   ],
-  "Phil Collins": [
-    "Against All Odds"
+  "Ella Fitzgerald": [
+    "Summertime"
   ],
-  "Poison": [
-    "Every Rose Has Its Thorn"
+  "Papa Roach": [
+    "Scars"
   ],
-  "The Eagles": [
-    "Best Of My Love"
+  "Frankie Valli": [
+    "Can't Take My Eyes Off of You"
   ],
-  "Queensrÿche": [
-    "Silent Lucidity"
+  "Gerry and the Pacemakers": [
+    "You'll Never Walk Alone"
   ],
-  "Police": [
-    "Every Breath You Take"
+  "Michael W. Smith": [
+    "Friends"
   ],
-  "Boston": [
-    "Amanda",
-    "More Than A Feeling"
+  "Billy Joe Royal": [
+    "Down in the Boondocks"
   ],
-  "Giant": [
-    "I'll See You In My Dreams"
+  "Christina Aguilera & Ricky Martin": [
+    "Nobody Wants to be Lonely"
   ],
-  "The Byrds": [
-    "Ballad of Easy Rider",
-    "Chestnut Mare"
+  "Rob Thomas": [
+    "Lonely No More"
   ],
-  "Sherriff": [
-    "When I'm With You"
+  "Big Girls Don't Cry": [
+    "Fergie"
   ],
-  "Tears for Fears": [
-    "Head Over Heels"
+  "The Four Aces": [
+    "Love is a Many"
   ],
-  "Telsa": [
-    "Love Song"
+  "The Four Seasons": [
+    "Big Girls Don't Cry"
   ],
-  "Hall & Oats": [
-    "She's Gone"
+  "Elton John & Kiki Dee": [
+    "Don't Go Breakin' My Heart"
   ],
-  "Air Supply": [
-    "The One That You Love"
+  "The Fray": [
+    "How to Save a Life"
   ],
-  "Great White": [
-    "Save Your Love"
+  "Randy Newman": [
+    "Marie"
   ],
-  "Enuff Z'Nuff": [
-    "Baby, You're The Greatest",
-    "Right By Your Side"
+  "Mary J. Blige": [
+    "Not Gon' Cry"
   ],
-  "Def Leppard": [
-    "To Be Alive"
+  "Diamond Rio": [
+    "I Believe"
   ],
-  "Matthew Sweet": [
-    "Everything Changes",
-    "Not When I Need It"
+  "The Kinks": [
+    "Oklahoma USA"
   ],
-  "Motley Crue": [
-    "Home Sweet Home"
+  "Joni Mitchell": [
+    "River"
   ],
-  "Scorpions": [
-    "Still Lovin' You"
+  "The Communards": [
+    "For A Friend"
   ],
-  "The Cure": [
-    "Love Song"
+  "Kermit the Frog": [
+    "It's Not Easy Being Green"
   ],
-  "Night Ranger": [
-    "Sister Christian"
+  "Dolly Parton": [
+    "Down From Dover"
   ],
-  "John Waite": [
-    "Missing You"
+  "What Hurts the Most": [
+    "Don't Think Twice, It's All Right"
   ],
-  "Loverboy": [
-    "Heaven In Your Eyes"
+  "Bruce Springsteen": [
+    "The River"
   ],
-  "Dire Straits": [
-    "Romeo and Juliet",
-    "Brother's In Arms"
+  "Sinead": [
+    "Streets of London"
   ],
-  "Lita Ford w/Ozzy": [
-    "Close Your Eyes Forever"
+  "Buffalo Tom": [
+    "Taillights Fade"
   ],
-  "Wilson Pickett": [
-    "Stagger Lee"
+  "Rolling Stones": [
+    "Angie",
+    "As Tears Go By"
   ],
-  "Steve Perry": [
-    "Oh Sherry"
+  "Ben Harper": [
+    "Walk Away"
   ],
-  "KISS": [
-    "Beth"
+  "Red House Painters": [
+    "Katy Song"
   ],
-  "Cinderella": [
-    "Don't Know What You Got Til It's Gone"
+  "Mahalia Jackson": [
+    "Trouble of the World"
   ],
-  "The Mission U.K.": [
-    "Butterfly On A Wheel"
+  "Neil Young": [
+    "Borrowed Tune"
   ],
-  "Stryper": [
-    "Honestly"
+  "Gram Parsons & Emmylou Harris": [
+    "$1,000 Wedding"
   ],
-  "Roxette": [
-    "It Must Have Been Love"
+  "Swamp Dogg": [
+    "Sam Stone"
   ],
-  "Gary Moore": [
-    "Always Gonna Love You"
+  "Lee Hazlewood": [
+    "My Autumn's Done Come"
   ],
-  "Lillian Axe": [
-    "See You Someday",
-    "Nobody Knows",
-    "The Day That I Met You"
+  "Strawberry Switchblade": [
+    "Since Yesterday"
   ],
-  "King Crimson": [
-    "I Talk To The Wind"
+  "The Notorious B.I.G.": [
+    "Suicidal Thoughts"
   ],
-  "Jennifer Rush": [
-    "Power Of Love"
-  ],
-  "Whitesnake": [
-    "Is This Love",
-    "Sailing Ships"
-  ],
-  "3 Doors Down": [
-    "Here Without You"
-  ],
-  "Steelheart": [
-    "She's Gone"
-  ],
-  "Saigon Kick": [
-    "Love Is On The Way"
-  ],
-  "XTC": [
-    "Ballad Of Peter Pumpkinhead"
-  ],
-  "Van Halen": [
-    "When It's Love"
-  ],
-  "Sam Smith": [
-    "Stay with Me"
-  ],
-  "Thompson Twins": [
-    "Hold Me Now"
-  ],
-  "White Lion": [
-    "When The Children Cry"
-  ],
-  "Black Sabbath": [
-    "Changes"
-  ],
-  "L.A. Guns": [
-    "The Ballad Of Jayne"
-  ],
-  "Jimmy Buffett": [
-    "Ballad of Spider John"
+  "Gravediggaz": [
+    "Burn Baby Burn"
   ]
 }
