@@ -134,6 +134,7 @@
     "Goin' Out of My Head",
     "Tears on My Pillow"
   ],
+<<<<<<< HEAD
   "Radiohead": [
     "Creep",
     "No Surprises"
@@ -151,6 +152,10 @@
     "Kentucky Rain",
     "You Don't Have to Say You Love Me",
     "How Great Thou Art"
+=======
+  "Jessie J, Ariana Grande, Nicki Minaj": [
+    "Bang Bang"
+>>>>>>> 4450523c5da2f2ca31b463f3079849ceaa1affd6
   ],
   "Art Garfunkel": [
     "Bright Eyes"
@@ -688,7 +693,18 @@
   "The Notorious B.I.G.": [
     "Suicidal Thoughts"
   ],
+<<<<<<< HEAD
   "Gravediggaz": [
     "Burn Baby Burn"
+=======
+  "6lack, J. Cole": [
+    "Pretty Little Fears"
+  ],
+  "Zayn Malik": [
+    "Dusk till dawn"
+  ],
+  "Chronixx": [
+    "Skankin' Sweet"
+>>>>>>> 4450523c5da2f2ca31b463f3079849ceaa1affd6
   ]
 }
