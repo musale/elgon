@@ -38,6 +38,10 @@ function tweetLyrics(lyricsUrl, song, artiste, retry = 0) {
   request(lyricsUrl, async function(err, _res, body) {
     const data = JSON.parse(body);
     const { lyrics, error } = data;
+    // Remove artistes names in [name] and names in general
+    let sanitizedLyrics = lyrics.replace(/(\[.*?\])/g, '')
+    sanitizedLyrics = sanitizedLyrics.replace(/artiste/ig, '')
+
     if (retry >= 3) {
       // Change artiste
       retry = 0;
@@ -55,7 +59,7 @@ function tweetLyrics(lyricsUrl, song, artiste, retry = 0) {
       console.log(`Rechecking lyrics for ${song} by ${artiste}`);
       tweetLyrics(lyricsUrl, song, artiste, retry);
     } else {
-      const splitLyrics = lyrics.split("\n").filter(n => n);
+      const splitLyrics = sanitizedLyrics.split("\n").filter(n => n);
       const tweetStr = chopLyricsToTweet(splitLyrics, artiste);
       const fileUrl = "https://picsum.photos/1024/512/?random";
 
